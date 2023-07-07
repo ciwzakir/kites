@@ -3,9 +3,9 @@ const app: Application = express()
 import cors from 'cors'
 
 app.use(cors())
-              app.use(express.json())
+app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-      app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
 })
 
